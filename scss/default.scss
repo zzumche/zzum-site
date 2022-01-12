@@ -54,16 +54,15 @@ nav {
     position: relative;
     display: inline-block;
     padding: 25px 30px;
-    margin: 40px 0;
     color: #03e9f4;
     text-decoration: none;
     text-transform: uppercase;
     transition: 0.5s;
     letter-spacing: 4px;
     overflow: hidden;
-    margin-right: 50px;
     width: fit-content !important;
     height: 20px !important;
+    max-width: unset !important;
 
     &:hover {
         background: $yellow;
@@ -523,6 +522,7 @@ a {
             border-radius: 24px;
             background: #fff;
             transition: all .2s ease-in;
+            height: auto;
 
             &:hover {
                 transform: scale(1.05);

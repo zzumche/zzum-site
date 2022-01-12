@@ -237,7 +237,6 @@ nav ul li:hover a {
   position: relative;
   display: inline-block;
   padding: 25px 30px;
-  margin: 40px 0;
   color: #03e9f4;
   text-decoration: none;
   text-transform: uppercase;
@@ -245,11 +244,11 @@ nav ul li:hover a {
   transition: 0.5s;
   letter-spacing: 4px;
   overflow: hidden;
-  margin-right: 50px;
   width: -webkit-fit-content !important;
   width: -moz-fit-content !important;
   width: fit-content !important;
   height: 20px !important;
+  max-width: unset !important;
 }
 
 .btn:hover {
@@ -770,6 +769,7 @@ a {
   background: #fff;
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
+  height: auto;
 }
 
 .knowledge .knowledge-cards .card:hover {
@@ -1229,7 +1229,6 @@ footer .column-one .header::before {
        object-fit: cover;
   }
   .knowledge-cards .card .card-content {
-    height: 100px;
     margin-top: -3px;
   }
   .knowledge-cards .card .card-content h2 {
