@@ -1,0 +1,254 @@
+@media screen and (max-width: 1488px) {
+    .inspire.section {
+        p::before {
+            background: $pink !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1264px) {
+    .gallery.section {
+        .filter-box {
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    }
+
+    .titles {
+        .over-title {
+            font-size: 2vw !important;
+        }
+        .title {
+            font-size: 3vw !important;
+            line-height: 3vw !important;
+        }  
+    }
+
+    .knowledge-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .card {
+            height: 400px;
+            max-width: 48%;
+
+            img {
+                max-height: 200px;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .card-content {
+                height: 100px;
+                margin-top: -3px;
+
+               h2 {
+                   padding: 0 !important;
+               }
+
+                p {
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .bigger-stuff-outer {
+        flex-direction: column;
+
+        .bigger-stuff-back {
+            height: 50vh !important;
+        }
+
+        .bigger-boxes-container {
+            height: 50vh;
+
+            .bigger-box {
+                width: 420px !important;
+
+                img {
+                    max-height: 200px !important;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .header {
+        font-size: 14vw !important;
+        text-align: center;
+
+        div:nth-child(3):after {
+            right: 0;
+            margin: auto;
+            height: 5vw !important;
+        }
+
+        .about-me {
+            width: 90% !important;
+        }
+    }
+
+    footer.section {
+        .header {
+            font-size: 64px !important;
+            text-align: left !important;
+        }
+    }
+}
+
+@media all and (max-width: 980px) {
+      
+    h1 {
+          @include base-font(3em);
+    }
+    
+}
+
+//ovdje je fullscreen snap isključen
+@media screen and (max-width: 876px) {
+    .container {
+        overflow: hidden;
+    }
+
+    .gallery.section {
+        .art, .design, .photo, .video, .everything {
+            flex-direction: column !important;
+
+            .gallery-item {
+                margin-bottom: -3px;
+            }
+
+            img {
+                max-width: unset !important;
+                height: 30vw !important;
+            }
+        }
+
+        .filter-lower ul {
+            left: unset !important;
+            text-align: center !important;
+        }
+    }
+
+    .titles {
+        .over-title {
+            font-size: 24px !important;
+        }
+        .title {
+            font-size: 10vw !important;
+            line-height: 10vw !important;
+        }  
+    }
+
+    .knowledge.section {
+        margin-top: 100px;
+
+        .knowledge-cards {
+        flex-direction: column;
+
+            .card {
+                max-width: unset;
+                width: 100%;
+            }
+        }
+    }
+
+    .inspire.section {
+        p{
+            font-size: 14vw !important;
+        }
+    }
+
+    .bigger-stuff-outer {
+        margin-bottom: 100px;
+
+        .bigger-boxes-container {
+            height: unset !important;
+
+            .swiper-wrapper {
+                flex-direction: column;
+
+
+                .bigger-box {
+                    width: 100% !important;
+                    min-width: unset !important;
+
+                    .card-content {
+                        min-height: 250px;
+                    }
+
+                    h2 {
+                        padding: 10px 0 0 0 !important;
+                    }
+
+                    p {
+                        font-size: 16px !important;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .blog.section {
+        margin-bottom: 100px;
+
+        .blog-posts {
+            .blog-box {
+                height: auto !important;
+                padding: 20px 0;
+
+                .blog-content {
+                    max-width: 80% !important;
+                }
+            }
+            
+        }
+    }
+    
+    footer.section {
+        .footer-inner {
+            flex-direction: column;
+
+            .column-two{
+                margin-bottom: 100px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px){
+    nav {
+        background: #fff;
+
+        ul {
+
+            li {
+            margin-right: 10px !important;
+
+            &:last-child {
+                margin-right: 0 !important;
+            }
+
+            a {
+                font-size: 16px !important;
+            }
+        }
+        }
+        
+    }
+}
+  
+@media all and (max-width: 480px) {
+    
+    h1 {
+          @include base-font(2em);
+    }
+    
+}

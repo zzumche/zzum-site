@@ -1,0 +1,44 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+@import url('https://fonts.googleapis.com/css?family=Titan+One');
+@import url('https://fonts.googleapis.com/css2?family=Carme&family=Heebo:wght@100;300;400;600;900&display=swap');
+
+
+
+$pink    : #ff006a;
+$purple  : #7b00e0;
+$orange  : #ff7900;
+$aqua    : #66e6ff;
+$yellow  : #ffcb2f;
+$font    : 'Titan One', sans-serif;
+$body-font: 'Heebo', sans-serif;
+$dark-grey: #2b2b2b;
+$mellow: #dfd89f;
+$reddo: #bc3738;
+
+@mixin base-font($size) {
+    font-size: $size;
+    font-family: $font;
+}
+
+@keyframes blobby {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+}
+
+@keyframes blobby2 {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.18); }
+    100% { transform: scale(1); }
+}
+
+@keyframes fadeInRight {
+    0% { opacity: 0; left: 20%; }
+    100% { opacity: 1; left: 0; }
+}
+
+@keyframes animate {
+    0% { bottom: 0%; }
+    50% { bottom: 100%; }
+    0% { bottom: 0%; }
+}
