@@ -106,6 +106,78 @@
   }
 }
 
+@-webkit-keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%, 100% {
+    top: 100%;
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%, 100% {
+    top: 100%;
+  }
+}
+
+@-webkit-keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+  50%, 100% {
+    right: 100%;
+  }
+}
+
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+  50%, 100% {
+    right: 100%;
+  }
+}
+
+@-webkit-keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%, 100% {
+    bottom: 100%;
+  }
+}
+
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%, 100% {
+    bottom: 100%;
+  }
+}
+
 body {
   background: -webkit-gradient(linear, left bottom, left top, from(#7b00e0), to(#ff006a));
   background: linear-gradient(to top, #7b00e0, #ff006a);
@@ -161,56 +233,86 @@ nav ul li:hover a {
   color: #ff7900;
 }
 
-.btn-container {
-  height: 60px;
-}
-
 .btn {
   position: relative;
   display: inline-block;
-  width: auto;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  text-transform: uppercase;
-  background-color: transparent;
-  cursor: pointer;
+  padding: 25px 30px;
+  margin: 40px 0;
+  color: #03e9f4;
   text-decoration: none;
-  font-family: "Heebo", sans-serif;
-  font-weight: 600;
-  font-size: 17px;
-  letter-spacing: 0.045em;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden;
+  margin-right: 50px;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  height: 20px !important;
 }
 
-.btn svg {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-}
-
-.btn svg rect {
-  stroke-width: 4;
-  stroke-dasharray: 353, 0;
-  stroke-dashoffset: 0;
-  -webkit-transition: all 600ms ease;
-  transition: all 600ms ease;
+.btn:hover {
+  background: #ffcb2f;
+  color: #050801;
+  -webkit-box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+          box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
 
 .btn span {
-  background: #ff8282;
-  background: -webkit-gradient(linear, left top, right top, from(#ff8282), to(#e178ed));
-  background: linear-gradient(to right, #ff8282 0%, #e178ed 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', endColorstr='#e178ed',GradientType=1 );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  position: absolute;
+  display: block;
 }
 
-.btn:hover svg rect {
-  stroke-width: 4;
-  stroke-dasharray: 196, 543;
-  stroke-dashoffset: 437;
+.btn span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), to(#03e9f4));
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  -webkit-animation: animate1 1s linear infinite;
+          animation: animate1 1s linear infinite;
+}
+
+.btn span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#03e9f4));
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  -webkit-animation: animate2 1s linear infinite;
+          animation: animate2 1s linear infinite;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+.btn span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, right top, left top, from(transparent), to(#03e9f4));
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  -webkit-animation: animate3 1s linear infinite;
+          animation: animate3 1s linear infinite;
+  -webkit-animation-delay: 0.50s;
+          animation-delay: 0.50s;
+}
+
+.btn span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#03e9f4));
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  -webkit-animation: animate4 1s linear infinite;
+          animation: animate4 1s linear infinite;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
 }
 
 .container {
@@ -696,8 +798,12 @@ a {
 
 .knowledge .btn-container {
   margin-top: 40px;
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .inspire p {
@@ -734,6 +840,10 @@ a {
 
 .bigger-stuff {
   max-height: 75vh;
+}
+
+.bigger-stuff .btn {
+  color: #ff7900;
 }
 
 .bigger-stuff .bigger-stuff-outer {
