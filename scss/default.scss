@@ -391,6 +391,36 @@ a {
     }
 }
 
+.blog-inner {
+    max-height: 85%;
+    overflow-y: auto;
+    font-family: $body-font;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .close-btn {
+        float:none !important;
+    }
+
+    img {
+            max-width: 100%;
+        }
+    .two-imgs {
+        display: flex; 
+        gap: 20px; 
+        margin-top: 40px;
+        justify-content: center;
+
+        img {
+            max-width: 45%;
+        }
+    }
+
+    
+}
+
 .gallery {
     height: 100vh;
     width: 100vw;
