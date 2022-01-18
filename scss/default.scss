@@ -795,14 +795,19 @@ a {
                 opacity: 0.7;
             }
 
-            &.one {
-                background-image: url('../img/blog/anna-kolosyuk-481874-unsplash.jpg');
+            &.one::before {
+                background-image: url('../img/blog/blog1a.jpg');
+                -webkit-filter: blur(5px);
+                -moz-filter: blur(5px);
+                -o-filter: blur(5px);
+                -ms-filter: blur(5px);
+                filter: blur(5px);
             }
             &.two {
-                background-image: url('../img/blog/alexandre-debieve-561298-unsplash.jpg');
+                background-image: url('../img/blog/blog1a.jpg');
             }
             &.three {
-                background-image: url('../img/blog/blake-richard-verdoorn-20063-unsplash.jpg');
+                background-image: url('../img/blog/blog1a.jpg');
             }
 
             .blog-content {
