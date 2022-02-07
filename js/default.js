@@ -99,10 +99,12 @@ function matchHeight(){
 };
 
 function swiperSlider(){
-  if ((jQuery('.swiper-wrapper').length)) {
-		var swiper = new Swiper('.swiper', {
-    loop: false,
-    slidesPerView: 'auto',
-    });
-	}
+  if ($(window).width() > 877) {
+    if ((jQuery('.swiper-wrapper').length)) {
+      var swiper = new Swiper('.swiper', {
+      loop: false,
+      slidesPerView: 'auto',
+      });
+    }
+  }
 };
