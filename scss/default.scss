@@ -254,6 +254,7 @@ a {
 .header-outer {
     height: 100vh;
     width: 100vw;
+    overflow-x: hidden;
 
     .header {
         height: inherit;
@@ -422,7 +423,7 @@ a {
 }
 
 .gallery {
-    height: 100vh;
+    
     width: 100vw;
     margin-top: 100px;
     z-index: -1;
@@ -527,6 +528,8 @@ a {
 }
 
 .knowledge {
+    margin-top: 200px; 
+
     .title, .over-title {
         color: #fff;
     }
@@ -590,6 +593,8 @@ a {
 }
 
 .inspire {
+    margin: 400px 0;
+
     p {
         font-size: 8em;
         color: #fff;
@@ -624,7 +629,7 @@ a {
 }
 
 .bigger-stuff {
-    max-height: 75vh;
+    
 
     .btn {
         color: $orange;
@@ -752,6 +757,8 @@ a {
 }
 
 .blog {
+    margin: 200px 0;
+
     .blog-header {
         display: flex;
         gap: 20px;
@@ -860,6 +867,10 @@ a {
 }
 
 footer {
+    .crt-logo {
+        display: none !important;
+    }
+
     background: #000;
 
     .footer-inner {

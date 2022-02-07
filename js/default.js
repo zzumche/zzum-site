@@ -99,9 +99,10 @@ function matchHeight(){
 };
 
 function swiperSlider(){
-  var swiper = new Swiper('.swiper', {
+  if ((jQuery('.swiper-wrapper').length)) {
+		var swiper = new Swiper('.swiper', {
     loop: false,
     slidesPerView: 'auto',
-    
-  });
+    });
+	}
 };

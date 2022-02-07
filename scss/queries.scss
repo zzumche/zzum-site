@@ -111,9 +111,7 @@
 
 //ovdje je fullscreen snap isključen
 @media screen and (max-width: 876px) {
-    .container {
-        overflow: hidden;
-    }
+    
 
     .gallery.section {
         .art, .design, .photo, .video, .everything {

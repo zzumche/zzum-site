@@ -465,6 +465,7 @@ a {
 .header-outer {
   height: 100vh;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 .header-outer .header {
@@ -651,7 +652,6 @@ a {
 }
 
 .gallery {
-  height: 100vh;
   width: 100vw;
   margin-top: 100px;
   z-index: -1;
@@ -771,6 +771,10 @@ a {
   color: #ffcb2f;
 }
 
+.knowledge {
+  margin-top: 200px;
+}
+
 .knowledge .title, .knowledge .over-title {
   color: #fff;
 }
@@ -839,6 +843,10 @@ a {
           justify-content: center;
 }
 
+.inspire {
+  margin: 400px 0;
+}
+
 .inspire p {
   font-size: 8em;
   color: #fff;
@@ -869,10 +877,6 @@ a {
   color: #ff7900;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
-}
-
-.bigger-stuff {
-  max-height: 75vh;
 }
 
 .bigger-stuff .btn {
@@ -1007,6 +1011,10 @@ a {
           box-sizing: content-box;
 }
 
+.blog {
+  margin: 200px 0;
+}
+
 .blog .blog-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1128,6 +1136,10 @@ a {
 
 footer {
   background: #000;
+}
+
+footer .crt-logo {
+  display: none !important;
 }
 
 footer .footer-inner {
@@ -1326,9 +1338,6 @@ footer .column-one .header::before {
 }
 
 @media screen and (max-width: 876px) {
-  .container {
-    overflow: hidden;
-  }
   .gallery.section .art, .gallery.section .design, .gallery.section .photo, .gallery.section .video, .gallery.section .everything {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;

@@ -14,7 +14,6 @@
 
     <link href="scss/default.css" rel="stylesheet" type="text/css">
     <link href="css/lightbox.css" rel="stylesheet" type="text/css">
-    <link href="css/fullpage.css" rel="stylesheet" type="text/css">
     <link href="css/all.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -29,7 +28,7 @@
                 <li><a href="#Footer">Footer</a></li>
             </ul>
     </nav>   -->
-    <div class="container" id="fullpage">
+    <div class="container">
         
         <section class="header-outer section active" id="Home">
             <div class="header">
@@ -73,12 +72,7 @@
                     <div class="gallery-item"><a href="img/gallery/sexy_jo__by_zzum_dcjgbts-pre.jpg" data-lightbox="image-art"><img src="img/gallery/sexy_jo__by_zzum_dcjgbts-pre.jpg"></a></div>
                     <div class="gallery-item"><a href="img/gallery/owlman.jpg" data-lightbox="image-art"><img src="img/gallery/owlman.jpg"></a></div>
                     <div class="gallery-item"><a href="img/gallery/yoko_from_tengen_toppa_gurren_by_zzum_dbad4us-fullview.jpg" data-lightbox="image-art"><img src="img/gallery/yoko_from_tengen_toppa_gurren_by_zzum_dbad4us-fullview.jpg"></a></div>
-                    <script>
-                        lightbox.option({
-                          'alwaysShowNavOnTouchDevices':true,
-                          'wrapAround': true
-                        })
-                    </script>
+                   
                 </div>
                 <div class="design">
                     <div class="filter-box">
@@ -112,12 +106,7 @@
                     <div class="gallery-item"><a href="img/gallery/di3.jpg" data-lightbox="image-art"><img src="img/gallery/di3.jpg"></a></div>
                     <div class="gallery-item"><a href="img/gallery/di4.jpg" data-lightbox="image-art"><img src="img/gallery/di4.jpg"></a></div>
                     <div class="gallery-item"><a href="img/gallery/di5.jpg" data-lightbox="image-art"><img src="img/gallery/di5.jpg"></a></div>
-                    <script>
-                        lightbox.option({
-                          'alwaysShowNavOnTouchDevices':true,
-                          'wrapAround': true
-                        })
-                    </script>
+                  
                 </div>
                 <div class="photo">
                     <div class="filter-box">
@@ -151,12 +140,6 @@
                     <div class="gallery-item"><a href="img/gallery/photo3.jpg" data-lightbox="image-art"><img src="img/gallery/photo3.jpg"></a></div>
                     <div class="gallery-item"><a href="img/gallery/photo4.jpg" data-lightbox="image-art"><img src="img/gallery/photo4.jpg"></a></div>
                     <div class="gallery-item"><a href="img/gallery/photo5.jpg" data-lightbox="image-art"><img src="img/gallery/photo5.jpg"></a></div>
-                    <script>
-                        lightbox.option({
-                          'alwaysShowNavOnTouchDevices':true,
-                          'wrapAround': true
-                        })
-                    </script>
                 </div>
                 <div class="video">
                     <div class="filter-box">
@@ -190,12 +173,6 @@
                     <div class="gallery-item"><a href="img/gallery/photo3.jpg" data-lightbox="image-art"><img src="img/gallery/photo3.jpg"></a></div>
                     <div class="gallery-item"><a href="img/gallery/photo4.jpg" data-lightbox="image-art"><img src="img/gallery/photo4.jpg"></a></div>
                     <div class="gallery-item"><a href="img/gallery/photo5.jpg" data-lightbox="image-art"><img src="img/gallery/photo5.jpg"></a></div>
-                    <script>
-                        lightbox.option({
-                          'alwaysShowNavOnTouchDevices':true,
-                          'wrapAround': true
-                        })
-                    </script>
                 </div>
         </section>
         <section class="knowledge section padding" id="Knowledge">
@@ -289,7 +266,7 @@
                             </div>
                         </div>
                         <div class="bigger-box swiper-slide">
-                            <img src="img/cards/art-art-materials-bright-1047540.jpg" alt="art-card-image">
+                            <img src="img/cards/velos.jpg" alt="art-card-image">
                             <div class="card-content">
                                 <h2>Content creator</h2>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Deserunt distinctio cum incidunt! Cumque praesentium possimus laborum voluptate expedita?</p>
@@ -305,7 +282,7 @@
                             </div>
                         </div>
                         <div class="bigger-box swiper-slide">
-                            <img src="img/cards/art-art-materials-bright-1047540.jpg" alt="art-card-image">
+                            <img src="img/cards/velos.jpg" alt="art-card-image">
                             <div class="card-content">
                                 <h2>Content creator</h2>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Deserunt distinctio cum incidunt! Cumque praesentium possimus laborum voluptate expedita?</p>
@@ -500,19 +477,16 @@
             
         </footer>
         </div>
-        <script src="js/lightbox-plus-jquery.js"></script>
-        <script src="js/default.js"></script>
-        <script src="js/fullpage.js"></script>
-        <script src="js/swiper.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script src="js/lightbox.js"></script>
+        <script src="js/default.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-        <script type="text/javascript">
-            var myFullpage = new fullpage('#fullpage', {
-                //options here
-                responsiveWidth: 876,
-	            autoScrolling:true,
-	        scrollHorizontally: true
-            });
+        <script>
+            lightbox.option({
+              'alwaysShowNavOnTouchDevices':true,
+              'wrapAround': true
+            })
         </script>
 </body>
 
